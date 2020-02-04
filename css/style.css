@@ -1704,17 +1704,18 @@ a {
 
 .slidecontainer {
     width: 100%;
+    position: relative;
 }
 
 .slider {
     -webkit-appearance: none;
     width: 230px;
-    height: 5px;
+    height: 6px;
     background: #e5e5e5;
     outline: none;
-    opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    background-image: -moz-linear-gradient(left ,#000000 0%,#000000 60%,#e5e5e5 40%, #e5e5e5 100%);
 }
 
 .slider:hover {
@@ -1727,19 +1728,46 @@ a {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #000000;
+    background: #000000 !important;
     cursor: pointer;
     border-color: #000 !important;
-    background-color: #000000;
+
 }
 
 .slider::-moz-range-thumb {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #000000;
+    background: #000000 !important;
     cursor: pointer;
     border-color: #000 !important;
-    background-color: #000000;
-    
 }
+
+.input-before::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #000000 !important;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-color: #000 !important;
+
+    position: absolute;
+    top: 8px;
+    left: -1px;
+}
+
+/* .input-before {
+    position: relative;
+} */
+
+
+
+
+
+
+
+
+
+
