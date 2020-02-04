@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose</title>
+    <!-- libs -->
+    <link rel="stylesheet" href="../libs/fontawesome-pro-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+
+    <header class="header project-header">
+
+        <div class="upper-nav d-flex align-items-center">
+            <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <a class="upper-nav__tel" href="tel:+998907417839"> <span>наш номер:</span> +998907417839</a>
+
+                <div class="upper-nav__right">
+                    <div class="lang-dropdown dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            rus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">eng</a>
+                            <a class="dropdown-item" href="#">uzb</a>
+                        </div>
+                    </div>
+                    <!-- /.dropdown -->
+
+
+                    <!-- Вход в аккаунт -->
+                    <button type="button" class="my-account" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fas fa-user"></i> Мой аккаунт
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Введите имя:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Введите пароль:</label>
+                                            <input type="password" class="form-control" id="message-text">
+                                        </div>
+                                        <div class="form-group form-group-3">
+                                            <a class="not-account" href="#!">У меня ещё нет аккаунта</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">Войти</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="search-dropdown dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Поиск"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.upper-nav__right -->
+
+            </div>
+        </div>
+        <!-- /.upper-nav -->
+
+        <nav class="nav products__nav">
+            <div class="container d-flex justify-content-between align-items-center flex-column flex-lg-row">
+
+                <a class="logo" href="#!">Mens Shop</a>
+
+                <div class="nav__right d-flex align-items-center flex-wrap">
+                    <ul class="nav__list d-flex align-items-center">
+                        <li class="nav__list-item"><a class="nav__link" href="../index.html">Главная</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="product.html">Ассортимент</a></li>
+                        <li class="nav__list-item"><a class="nav__link choose__active" href="#!">Что жарко?</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="../index.html#sales">Скидки</a></li>
+                    </ul>
+
+                    <div class="nav__buy d-flex flex-column">
+
+                        <!-- Your card -->
+                        <div class="dropdown card-dropdown">
+                            <button class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Ваша карта
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Uzcard</a>
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">Master Card</a>
+                            </div>
+                        </div>
+                        <!-- Your card end -->
+
+                        <a class="nav__basket d-flex justify-content-between align-items-center" href="#!">
+                            <i class="fas fa-shopping-bag"></i>
+
+                            <p>0 покупок | $ 0</p>
+                        </a>
+
+                        <div class="dropdown nav__dropdown">
+                            <button class="btn d-flex justify-content-between align-items-center" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                menu
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Главная</a>
+                                <a class="dropdown-item" href="#">Ассортимент</a>
+                                <a class="dropdown-item" href="#">Что жарко?</a>
+                                <a class="dropdown-item" href="#">Скидки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.nav__buy -->
+                </div>
+                <!-- /.nav__right -->
+
+            </div>
+            <!-- /.container -->
+
+        </nav>
+        <!-- /.nav -->
+    </header>
+
+
+    <div class="sequence">
+        <div class="container">
+            <div class="row">
+                <div class="sequence-div d-flex justify-content-between align-items-center">
+                    <a href="../index.html"><i class="fas fa-home-alt"></i></a>
+
+                    <a href="#!"><span>></span>Men</a>
+                    <a href="#!"><span>></span>Clothes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="choose-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators choose__carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="container d-flex justify-content-between">
+                        <div class="row">
+                            <div class="offers d-flex justify-content-between">
+
+
+                                <div class="left col-7">
+                                    <img src="../img/products1-1.jpg" alt="">
+                                </div>
+
+                                <div class="right col-5 d-flex flex-column justify-content-between">
+                                    <div class="choose-titles">
+                                        <h2>Overcoat</h2>
+                                        <p class="right__price">$21.75</p>
+                                        <p class="right__about">This is Photoshop's version of Lorem Ipsum. Proin
+                                            gravida
+                                            nibh vel velit
+                                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                            elit
+                                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+                                            nibh
+                                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                                            tellus a odio tincidunt auctor a ornare odio. </p>
+                                    </div>
+
+                                    <div class="choose-btn"><a class="tab-content__button" href="#!">Купить сейчас</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container d-flex justify-content-between">
+                        <div class="row">
+                            <div class="offers d-flex justify-content-between">
+
+
+                                <div class="left col-7">
+                                    <img src="../img/choose_img-1.jpg" alt="">
+                                </div>
+
+                                <div class="right col-5 d-flex flex-column justify-content-between">
+                                    <div class="choose-titles">
+                                        <h2>Open Heart Top</h2>
+                                        <p class="right__price">$13.95</p>
+                                        <p class="right__about">This is Photoshop's version of Lorem Ipsum. Proin
+                                            gravida
+                                            nibh vel velit
+                                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                            elit
+                                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+                                            nibh
+                                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                                            tellus a odio tincidunt auctor a ornare odio. </p>
+                                    </div>
+
+                                    <div class="choose-btn"><a class="tab-content__button" href="#!">Купить сейчас</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container d-flex justify-content-between">
+                        <div class="row">
+                            <div class="offers d-flex justify-content-between">
+
+
+                                <div class="left col-7">
+                                    <img src="../img/products1-4.jpg" alt="">
+                                </div>
+
+                                <div class="right col-5 d-flex flex-column justify-content-between">
+                                    <div class="choose-titles">
+                                        <h2>Costume</h2>
+                                        <p class="right__price">$26.45</p>
+                                        <p class="right__about">This is Photoshop's version of Lorem Ipsum. Proin
+                                            gravida
+                                            nibh vel velit
+                                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                            elit
+                                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+                                            nibh
+                                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                                            tellus a odio tincidunt auctor a ornare odio. </p>
+                                    </div>
+
+                                    <div class="choose-btn"><a class="tab-content__button" href="#!">Купить сейчас</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container d-flex justify-content-between">
+                        <div class="row">
+                            <div class="offers d-flex justify-content-between">
+
+
+                                <div class="left col-7 d-flex justify-content-center">
+                                    <img class="slider-photo" src="../img/photo_2020-01-26_21-58-00.jpg" alt="">
+                                </div>
+
+                                <div class="right col-5 d-flex flex-column justify-content-between">
+                                    <div class="choose-titles">
+                                        <h2>Classic Shirt</h2>
+                                        <p class="right__price">$17.95</p>
+                                        <p class="right__about">This is Photoshop's version of Lorem Ipsum. Proin
+                                            gravida
+                                            nibh vel velit
+                                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                            elit
+                                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+                                            nibh
+                                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                                            tellus a odio tincidunt auctor a ornare odio. </p>
+                                    </div>
+
+                                    <div class="choose-btn"><a class="tab-content__button" href="#!">Купить сейчас</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container d-flex justify-content-between">
+                        <div class="row">
+                            <div class="offers d-flex justify-content-between">
+
+
+                                <div class="left col-7">
+                                    <img class="slider-photo" src="../img/choose-slider-1.jpg" alt="">
+                                </div>
+
+                                <div class="right col-5 d-flex flex-column justify-content-between">
+                                    <div class="choose-titles">
+                                        <h2>Suit</h2>
+                                        <p class="right__price">$25.65</p>
+                                        <p class="right__about">This is Photoshop's version of Lorem Ipsum. Proin
+                                            gravida
+                                            nibh vel velit
+                                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                            elit
+                                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+                                            nibh
+                                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                                            tellus a odio tincidunt auctor a ornare odio. </p>
+                                    </div>
+
+                                    <div class="choose-btn"><a class="tab-content__button" href="#!">Купить сейчас</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="carousel-control-prev choose__carousel-control-prev" href="#carouselExampleIndicators"
+                role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon choose__carousel-control-prev-icon" aria-hidden="true"><i
+                        class="far fa-chevron-left"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next choose__carousel-control-next" href="#carouselExampleIndicators"
+                role="button" data-slide="next">
+                <span class="carousel-control-next-icon choose__carousel-control-next-icon" aria-hidden="true">
+                    <i class="far fa-chevron-right"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+
+
+
+    <section class="choose-section">
+        <div class="container d-flex justify-content-between">
+
+
+            <div class="choose-section__left col-9">
+
+
+                <div class="choose-section__top d-flex justify-content-between align-items-center">
+                    <div class="section__top-left d-flex">
+                        <p>Сортировка по</p>
+
+                        <form action="">
+                            <select name="" size="1" id="">
+                                <option class="nav-link" id="page-2-tab" data-toggle="tab" href="#page-2" role="tab"
+                                aria-controls="page-2" aria-selected="true" value="">Популярности</option>
+                                <option class="nav-link" id="page-2-tab" data-toggle="tab" href="#page-2" role="tab"
+                                aria-controls="page-2" aria-selected="false" value="">Дате</option>
+
+                            </select>
+                        </form>
+
+                    </div>
+
+                    <div class="section__top-right d-flex align-items-center">
+                        <p>Showing 1-12 of 347 results</p>
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="page-1-tab" data-toggle="tab" href="#page-1" role="tab"
+                                    aria-controls="page-1" aria-selected="true">1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="page-2-tab" data-toggle="tab" href="#page-2" role="tab"
+                                    aria-controls="page-2" aria-selected="false">2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="page-3-tab" data-toggle="tab" href="#page-3" role="tab"
+                                    aria-controls="page-3" aria-selected="false">3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab" data-toggle="tab" href="#!" role="tab" aria-controls=""
+                                    aria-selected="false"><i class="far fa-chevron-right"></i></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="choose__border"></div>
+
+
+                <div class="choose-section__middle">
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab">
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-1.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-2.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-3.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab">
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-1.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-2.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-3.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="page-3" role="tabpanel" aria-labelledby="page-3-tab">
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-1.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-2.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-3.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-content" id="myTabContent-2">
+                        <div class="tab-pane fade show active" id="page-4" role="tabpanel" aria-labelledby="page-4-tab">
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-4.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-1.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-2.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-3.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-4.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products1-4.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="page-5" role="tabpanel" aria-labelledby="page-5-tab">
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-4.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-1.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-2.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-3.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-4.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products1-4.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="page-6" role="tabpanel" aria-labelledby="page-6-tab">
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products3-4.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-1.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-2.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="sale-cards row d-flex justify-content-between">
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-3.jpg" alt="">
+                                    <div>
+                                        <h3>КОМПЛЕКТ</h3>
+                                        <p>$164.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products2-4.jpg" alt="">
+                                    <div>
+                                        <h3>куртка</h3>
+                                        <p>$76.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sale-card col-4">
+                                    <img src="../img/products1-4.jpg" alt="">
+                                    <div>
+                                        <h3>GOODING SHORTS</h3>
+                                        <p>$79.95</p>
+                                        <a href="#!">КУПИТЬ СЕЙЧАС <i class="far fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="section__top-right d-flex align-items-center justify-content-end">
+                        <p>Showing 1-12 of 347 results</p>
+
+                        <ul class="nav nav-tabs" id="myTab-2" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="page-4-tab" data-toggle="tab" href="#page-4" role="tab"
+                                    aria-controls="page-4" aria-selected="true">1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="page-5-tab" data-toggle="tab" href="#page-5" role="tab"
+                                    aria-controls="page-5" aria-selected="false">2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="page-6-tab" data-toggle="tab" href="#page-6" role="tab"
+                                    aria-controls="page-6" aria-selected="false">3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab-2" data-toggle="tab" href="#!" role="tab" aria-controls=""
+                                    aria-selected="false"><i class="far fa-chevron-right"></i></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="choose-section__right col-3">
+                <h2>Категории</h2>
+
+                <div class="categories">
+                    <div class="accordion choose__accordion" id="accordionExample">
+                        <div class="card choose__card">
+                            <div class="card-header choose__card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link choose__btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <div class="accordion-item d-flex justify-content-between align-items-center">
+                                            <h3>Новое</h3>
+                                            <div class="plus"></div>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body choose__card-body">
+                                    <div class="on-sale__card on-sale-2 d-flex">
+                                        <img src="../img/choose_featured-products-06.jpg" alt="">
+                                        <div class="card__right">
+                                            <h4>Billie J</h4>
+                                            <p>$69.49</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card choose__card">
+                            <div class="card-header choose__card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link choose__btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        <div class="accordion-item d-flex justify-content-between align-items-center">
+                                            <h3>Что Жарко?</h3>
+                                            <div class="plus"></div>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body choose__card-body">
+                                    <div class="on-sale__card on-sale-2 d-flex">
+                                        <img src="../img/choose_on-sale-2.jpg" alt="">
+                                        <div class="card__right">
+                                            <h4>FOLICIA SILK SHIRT</h4>
+                                            <p>$69.49</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card choose__card">
+                            <div class="card-header choose__card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link choose__btn-link btn-link-3 collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        <div
+                                            class="accordion-item">
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <h3>Men</h3>
+                                                <div class="plus"></div>
+                                            </div>
+                                            
+
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body choose__card-body">
+                                    <div class="d-flex justify-content-start">
+                                        <ul class="choose__card-link d-flex flex-column align-items-start">
+                                            <li><a href="#!">Clothes</a></li>
+                                            <li><a href="#!">Shoes</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card choose__card">
+                            <div class="card-header choose__card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link choose__btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        <div class="accordion-item d-flex justify-content-between align-items-center">
+                                            <h3 class="hide">Сезон</h3>
+                                            <div class="plus"></div>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body choose__card-body">
+                                    <div class="d-flex justify-content-start">
+                                        <ul class="choose__card-link d-flex flex-column align-items-start">
+                                            <li><a href="#!">Winter</a></li>
+                                            <li><a href="#!">Spring</a></li>
+                                            <li><a href="#!">Summer</a></li>
+                                            <li><a href="#!">Autumn</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="filters">
+                        <input type="range" multiple min="0" step="1" max="200">
+                        <div class="filters__div d-flex justify-content-between align-items-center">
+                            <a href="#!">в размере $0 - $200</a>
+                            <a href="#!">Фильтр</a>
+                        </div>
+                        <div class="your-size">
+                            <h3>Выберите Ваш размер</h3>
+                            <div class="sizes d-flex justify-content-between">
+                                <a href="#!">xs</a>
+                                <a href="#!">s</a>
+                                <a href="#!">m</a>
+                                <a href="#!">l</a>
+                                <a href="#!">xl</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="on-sale d-flex flex-column">
+                    <h3>On sale</h3>
+                    <div class="on-sale__card d-flex">
+                        <img src="../img/choose_on-sale-1.jpg" alt="">
+                        <div class="card__right">
+                            <h4>PINTUCK TANK</h4>
+                            <p>$45.55</p>
+                        </div>
+                    </div>
+                    <div class="on-sale__card d-flex">
+                        <img src="../img/choose_on-sale-2.jpg" alt="">
+                        <div class="card__right">
+                            <h4>FOLICIA SILK SHIRT</h4>
+                            <p>$69.49</p>
+                        </div>
+                    </div>
+                    <div class="on-sale__card d-flex">
+                        <img src="../img/choose_on-sale-3.jpg" alt="">
+                        <div class="card__right">
+                            <h4>Laylala Shirt</h4>
+                            <p>$78.25</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="on-sale featured-products d-flex flex-column">
+                    <h3>featured products</h3>
+                    <div class="on-sale__card d-flex">
+                        <img src="../img/choose_featured-products-03.jpg" alt="">
+                        <div class="card__right">
+                            <h4>Basic Sunglasses</h4>
+                            <p>$14.95</p>
+                        </div>
+                    </div>
+                    <div class="on-sale__card d-flex">
+                        <img src="../img/choose_featured-products-06.jpg" alt="">
+                        <div class="card__right">
+                            <h4>Billie J</h4>
+                            <p>$69.49</p>
+                        </div>
+                    </div>
+                    <div class="on-sale__card d-flex">
+                        <img src="../img/choose_featured-products-08.jpg" alt="">
+                        <div class="card__right">
+                            <h4>Sandie Shopperbag</h4>
+                            <p>$69.94</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /.choose-section -->
+
+
+    <div class="grey-block">
+    </div>
+
+
+    <footer class="footer">
+        <div class="container d-flex justify-content-between">
+            <div class="row col-9 justify-content-between">
+
+                <div class="footer__text d-flex flex-wrap flex-column">
+                    <h3>Наш сервис</h3>
+                    <ul>
+                        <li><a href="#!">Contact</a></li>
+                        <li><a href="#!">FAQ</a></li>
+                        <li><a href="#!">Terms of payment</a></li>
+                        <li><a href="#!">Terms of sale</a></li>
+                        <li><a href="#!">Delivery terms and conditions</a></li>
+                        <li><a href="#!">Returns and Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer__text d-flex flex-wrap flex-column">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="#!">Affiliate</a></li>
+                        <li><a href="#!">Cookies</a></li>
+                        <li><a href="#!">How to Shop</a></li>
+                        <li><a href="#!">About Nelly</a></li>
+                        <li><a href="#!">Investor relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer__text d-flex flex-wrap flex-column">
+                    <h3>Компании</h3>
+                    <ul>
+                        <li><a href="#!">Evening dresses</a></li>
+                        <li><a href="#!">Makeup</a></li>
+                        <li><a href="#!">Fashion forward</a></li>
+                        <li><a href="#!">training clothes</a></li>
+                        <li><a href="#!">Special Occasion Dresses</a></li>
+                    </ul>
+                </div>
+                <div class="footer__text d-flex flex-wrap flex-column">
+                    <h3>История</h3>
+                    <ul>
+                        <li><a href="#!">Paris</a></li>
+                        <li><a href="#!">New York</a></li>
+                        <li><a href="#!">London</a></li>
+                        <li><a href="#!">Madrid</a></li>
+                        <li><a href="#!">Tokio</a></li>
+                    </ul>
+                </div>
+
+                <div class="contacts d-flex flex-wrap flex-column">
+                    <h3>Соц сети</h3>
+                    <div class="icons d-flex flex-column justify-content-between">
+                        <div class="icon d-flex justify-content-between">
+                            <img src="../img/twitter.png" alt="">
+                            <img src="../img/pinterest.png" alt="">
+                            <img src="../img/facebook.png" alt="">
+                        </div>
+                        <div class="icon d-flex justify-content-between">
+                            <img src="../img/google.png" alt="">
+                            <img src="../img/t.png" alt="">
+                            <img src="../img/v.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <img class="footer__img" src="../img/secure.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+    <script src="../libs/jquery-3.4.1.min.js"></script>
+    <script src="../libs/popper.min.js"></script>
+    <script src="../libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
